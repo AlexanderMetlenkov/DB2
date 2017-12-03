@@ -24,7 +24,7 @@ public class Parcer {
 
     public static List<String> convertToJson( List<String> inputLogs) throws ParseException {
         List<String> jsons = new ArrayList<>();
-        DateFormat format = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss z", Locale.ENGLISH);
+        DateFormat format = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss");
         inputLogs.forEach(line -> {
             String[] x = line.split(", ");
             try {
